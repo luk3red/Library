@@ -1,0 +1,40 @@
+package web.service;
+
+import java.io.InputStream;
+
+import javax.ws.rs.Consumes;
+import javax.ws.rs.GET;
+import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+
+public interface Servicelibreriaint {
+
+	String ListaLibrerie();
+
+	String ListaLibpubb();
+
+	String LibPub(String id_libreria, String username);
+
+	Response CreaLib(InputStream input) throws Exception;
+
+	Response CreaLibCond(InputStream input) throws Exception;
+
+	Response EliminaLib(InputStream input) throws Exception;
+
+	Response Modnomelib(InputStream input) throws Exception;
+
+	Response Modnomelibc(InputStream input) throws Exception;
+
+	Response PubLib(InputStream input) throws Exception;
+
+	String ListaLibreriaUser(String username);
+
+	String ListaLibreriaCUser(String username);
+
+	String ListaLibreriaCwUser(String username);
+
+}
