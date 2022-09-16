@@ -1,0 +1,19 @@
+<?php
+session_start();
+$username = $_SESSION['var'];
+
+<html>
+<center><h1>Inserisci l'id della libreria da eliminare</h1></center>
+<form action="http://localhost/mioserver/eliminalib.php" method="post">
+
+<div>
+	<center>
+    <label for="uname"><b>ID</b></label>
+    <input type="text" placeholder="Inserisci ID" name="id" required>
+
+    <button type="submit">ELIMINA</button>
+	</center>
+  </div>
+</form>
+</html>
+?>
